@@ -83,7 +83,7 @@ const Payment = ({ history }) => {
       if (result.error) {
         payBtn.current.disabled = false;
 
-        alert.error(result.error.message);
+        toast.error(result.error.message);
       } else {
         if (result.paymentIntent.status === "succeeded") {
           order.paymentInfo = {
