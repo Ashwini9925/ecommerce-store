@@ -39,7 +39,7 @@ const About = () => {
                   lineHeight: "1.2",
                 }}
               >
-                Welcome to Nest
+                Welcome to Smart Shop
               </span>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

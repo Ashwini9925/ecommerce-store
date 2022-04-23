@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import logo from "../../Assets/logo.webp";
 
 const Header = () => {
 const { cartItems } = useSelector((state) => state.cart);
@@ -27,8 +28,7 @@ window.addEventListener("scroll", () =>{
       <div className="logo pxy__10">
         <Link to="/">
           <img
-            src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/logo.svg"
-            alt=""
+            src={logo}
             className="logo"
             style={{
               width: "150px",
@@ -59,14 +59,6 @@ window.addEventListener("scroll", () =>{
             overflow: "hidden",
           }}
         >
-          <span
-            style={{
-              color: "#fff",
-            }}
-          >
-            Welcome to our shop...You can find anything in here as your
-            favourites..
-          </span>
         </div>
       </div>
 
@@ -130,12 +122,6 @@ window.addEventListener("scroll", () =>{
           </Link>
           <Link to="/Products">
             <li>Products</li>
-          </Link>
-          <Link to="/creator">
-            <li>Become A Seller</li>
-          </Link>
-          <Link to="/faq">
-            <li>Users Rules</li>
           </Link>
           <Link to="/contact">
             <li>Contact</li>
