@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import logo from "../../Assets/logo.webp";
+import logo from "../../Assets/logo.jpg";
 
 const Header = () => {
 const { cartItems } = useSelector((state) => state.cart);
