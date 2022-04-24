@@ -11,7 +11,8 @@ const Footer = () => {
           src={logo}
           style={{ cursor: "pointer",
          width:"120px",
-        height:"130px" }}
+        height:"130px",
+        objectFit:"contain" }}
         />
         <div className="location flex py__10">
           <svg
