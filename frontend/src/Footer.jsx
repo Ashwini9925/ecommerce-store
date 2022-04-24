@@ -9,7 +9,9 @@ const Footer = () => {
       <div className="footer1st">
         <img
           src={logo}
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer",
+         width:"120px",
+        height:"130px" }}
         />
         <div className="location flex py__10">
           <svg

@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import logo from "../../Assets/logo.jpg";
+import logo from "../../Assets/logo.jng";
 
 const Header = () => {
 const { cartItems } = useSelector((state) => state.cart);
@@ -21,6 +21,7 @@ window.addEventListener("scroll", () =>{
 })
 
   return (
+  
     <div className="Header">
     {/* Header TopBar */}
     <div className="Header__topbar space__beetween">
@@ -48,7 +49,7 @@ window.addEventListener("scroll", () =>{
           position: "relative",
         }}
       >
-        <div
+        {/* <div
           className="inputBox"
           style={{
             display: "flex",
@@ -59,7 +60,7 @@ window.addEventListener("scroll", () =>{
             overflow: "hidden",
           }}
         >
-        </div>
+        </div> */}
       </div>
 
       <div
@@ -91,7 +92,7 @@ window.addEventListener("scroll", () =>{
         >
           <strong style={{
             padding:"0px 5px"
-          }}>Email:</strong> temp123@gmail.com
+          }}>Email:</strong> ashu45709@gmail.com
         </span>
       </div>
     </div>
